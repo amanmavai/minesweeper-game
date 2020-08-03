@@ -1,38 +1,64 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cellContainer {
   display: flex;
-  flex-direction: column;
   align-items: center;
+}
+.cell {
+  margin: 1px;
+  background: #e513c1;
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+  padding: 15px;
+}
+.cell-bomb {
+  margin: 1px;
+  background: yellow;
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+  padding: 15px;
+}
+.cell-blank {
+  margin: 1px;
+  background: lightcyan;
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+  padding: 15px;
+}
+.bomb {
+  width: 30px;
+  height: 30px;
+}
+.minecontainer {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.title {
+  text-align: center;
+  height: 30px;
+  color: red;
+}
+.green{
+  color:rgb(58, 223, 58);
+}
+.count {
+  font-size: x-large;
+  font-weight: bold;
+  font-family: cursive;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.main-title {
+  font-size: xxx-large;
+  color: #007eff;
+  font-family: cursive;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cell-disabled{
+  pointer-events:none;
+  opacity: 0.4;
 }
