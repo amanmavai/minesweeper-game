@@ -1,7 +1,7 @@
 import React from 'react'
 import { MineSweeper } from './MineSweeper'
 import './App.css'
-let [ROWS, COLS, BOMBS] = [8, 8, 8] // Ideally should come from configuration
+let [ROWS, COLS, BOMBS] = [5, 5, 5] // Ideally should come from configuration
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max))
